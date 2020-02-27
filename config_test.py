@@ -26,11 +26,11 @@ from absl import flags
 
 PRETRAINED_MODEL = './model/ring_6_68641'
 
-flags.DEFINE_string('img_path', '/ps/project/face2d3d/face2mesh/website_release_testings/single_image_test/000001.jpg', 'Image to run')
+flags.DEFINE_string('img_path', '/data/me/bappi/bappi.jpg', 'Image to run')
 flags.DEFINE_string('out_folder', './RingNet_output',
                      'The output path to store images')
 
-flags.DEFINE_boolean('save_obj_file', False,
+flags.DEFINE_boolean('save_obj_file', True,
                      'If true the output meshes will be saved')
 
 flags.DEFINE_boolean('save_flame_parameters', False,

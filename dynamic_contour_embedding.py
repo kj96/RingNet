@@ -22,7 +22,7 @@ import pyrender
 import trimesh
 from smpl_webuser.serialization import load_model
 from psbody.mesh import Mesh
-import cPickle as pickle
+import pickle
 
 def load_static_embedding(static_embedding_path):
     with open(static_embedding_path, 'rb') as f:
